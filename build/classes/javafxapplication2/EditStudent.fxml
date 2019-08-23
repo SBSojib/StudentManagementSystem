@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.EditStudentController">
+  <children>
+    <AnchorPane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label prefWidth="271.0" text="Edit student Info" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="494.0" AnchorPane.rightAnchor="435.0" AnchorPane.topAnchor="23.0">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <GridPane prefHeight="350.0" prefWidth="353.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="142.0">
+      <children>
+        <Label prefWidth="30.0" text="ID :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" text="Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label font="$x1" text="Phone Number :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label font="$x1" text="Department :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label font="$x1" text="Father Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label font="$x1" text="E-Mail :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label font="$x1" text="Mother Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <Label font="$x1" text="Year :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <Label font="$x1" text="Semester :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <Label font="$x1" text="Address :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <Label font="$x1" text="Result :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+        <TextField fx:id="name" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="department" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="phoneNumber" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="email" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="fatherName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="motherName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField fx:id="year" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <TextField fx:id="semester" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <TextField fx:id="address" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <TextField fx:id="result" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="34.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <ChoiceBox fx:id="ids" style="-fx-background-color:turquoise;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <Button fx:id="autofill" alignment="CENTER" disable="false" maxHeight="16.0" maxWidth="70.0" mnemonicParsing="false" onAction="#autofill" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Autofill" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Button>
+          </children>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button fx:id="confirm" font="$x1" maxHeight="55.0" maxWidth="214.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="55.0" prefWidth="214.0" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="512.0" AnchorPane.topAnchor="537.0" />
+    <Button fx:id="back" layoutX="1076.0" layoutY="592.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:dodgerblue;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE" />
+  </children>
+</AnchorPane>

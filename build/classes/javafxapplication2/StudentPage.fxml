@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-radius: 15;&#10;&#10;-fx-background-color:white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPageController">
+  <children>
+    <AnchorPane layoutY="0.0" prefHeight="81.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Label layoutY="21.0" prefWidth="363.0" text="Student Information" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="445.5" AnchorPane.rightAnchor="341.5">
+          <font>
+            <Font name="System Bold" size="34.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <Button fx:id="confirm" layoutY="543.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="56.0" prefWidth="205.0" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;" text="Change Password" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="542.0">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+    </Button>
+    <GridPane alignment="CENTER" gridLinesVisible="false" layoutY="127.0" prefHeight="340.0" prefWidth="436.0" AnchorPane.leftAnchor="389.0" AnchorPane.rightAnchor="375.0">
+      <children>
+        <Label id="id" text="ID :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="System Bold Italic" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label id="fullName" font="$x1" text="Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label id="department" font="$x1" text="Department :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label id="phoneNumber" font="$x1" text="Phone Number" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label font="$x1" text="E-Mail :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label id="motherName" font="$x1" text="Mother's Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <Label id="year" font="$x1" text="Year :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <Label id="semester" font="$x1" text="Semester :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <Label id="address" font="$x1" text="Address :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <Label id="result" font="$x1" text="Result :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+        <Label id="fatherName" font="$x1" text="Father's Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label fx:id="department" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="motherName" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label fx:id="id" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label fx:id="phoneNumber" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label fx:id="email" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label fx:id="fullName" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label fx:id="fatherName" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label fx:id="semester" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <Label fx:id="address" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <Label fx:id="year" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Label fx:id="result" font="$x2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="295.0" minWidth="10.0" prefWidth="209.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="187.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      </rowConstraints>
+    </GridPane>
+    <Button fx:id="back" layoutX="1103.0" layoutY="599.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

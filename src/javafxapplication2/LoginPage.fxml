@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" style="&#10;&#10;-fx-background-color:dodgerblue; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.LoginPageController">
+  <children>
+    <Button fx:id="confirm" layoutY="435.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="69.0" prefWidth="391.0" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" AnchorPane.leftAnchor="435.0" AnchorPane.rightAnchor="374.0">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
+    <VBox prefHeight="282.0" prefWidth="904.0" spacing="18.0" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="101.0">
+      <children>
+        <Label fx:id="enterName" text="Enter Id" wrapText="true" VBox.vgrow="ALWAYS">
+          <font>
+            <Font name="System Bold Italic" size="24.0" fx:id="x1" />
+          </font>
+        </Label>
+        <TextField id="as" fx:id="id" prefHeight="29.0" prefWidth="135.0" VBox.vgrow="ALWAYS" />
+        <Label fx:id="enterPass" font="$x1" text="Enter  Password" wrapText="true" />
+        <PasswordField id="pass" fx:id="password" prefHeight="29.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+        <Label font="$x1" prefHeight="21.0" text="Student/Admin" wrapText="true" VBox.vgrow="ALWAYS" />
+        <ChoiceBox fx:id="Identity" style="-fx-background-color:white;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" VBox.vgrow="ALWAYS">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+      </children>
+    </VBox>
+    <Label layoutY="32.0" prefWidth="186.0" text="Login" wrapText="true" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="451.0">
+      <font>
+        <Font name="System Bold" size="35.0" />
+      </font>
+    </Label>
+    <Button fx:id="back" layoutX="1066.0" layoutY="604.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+    <Label fx:id="error" layoutX="220.0" layoutY="549.0" prefWidth="484.0" text="" textFill="RED">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

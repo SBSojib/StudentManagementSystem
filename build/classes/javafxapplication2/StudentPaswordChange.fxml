@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" style="&#10;-fx-background-color:dodgerblue; &#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPaswordChangeController">
+  <children>
+    <VBox layoutY="94.0" prefHeight="368.0" prefWidth="479.0" spacing="20.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="301.0">
+      <children>
+        <Label minWidth="13.999908447265625" prefWidth="47.0" text="Id" wrapText="true">
+          <font>
+            <Font name="System Bold" size="23.0" fx:id="x2" />
+          </font>
+        </Label>
+        <TextField fx:id="id" prefWidth="200.0" />
+        <Label font="$x2" text="Previous Password" wrapText="true" />
+        <PasswordField fx:id="previousPassword" prefWidth="200.0" />
+        <Label font="$x2" text="New Password" wrapText="true" />
+        <PasswordField fx:id="newPassword" prefWidth="200.0" />
+        <Label font="$x2" text="Confirm New Password" wrapText="true" />
+        <PasswordField fx:id="confirmNewPassword" prefWidth="200.0" />
+      </children>
+    </VBox>
+    <Label layoutY="19.0" prefWidth="442.0" text="Change Student Password" wrapText="true" AnchorPane.leftAnchor="457.0" AnchorPane.rightAnchor="301.0">
+      <font>
+        <Font name="System Bold" size="32.0" />
+      </font>
+    </Label>
+    <Button fx:id="confirm" layoutY="543.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="58.0" prefWidth="184.0" style="-fx-background-color:black;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="547.0" AnchorPane.rightAnchor="469.0">
+      <font>
+        <Font name="System Bold" size="17.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="back" layoutX="1089.0" layoutY="601.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

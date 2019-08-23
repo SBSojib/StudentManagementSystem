@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.SignUpController">
+  <children>
+    <GridPane layoutY="114.0" prefHeight="316.0" prefWidth="926.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="138.0">
+      <children>
+        <Label text="ID :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" text="Email :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="id" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="email" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label font="$x1" text="Password" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <PasswordField fx:id="password" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label font="$x1" text="Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="name" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label font="$x1" text="Authentication Code :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <TextField fx:id="authenCode" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label font="$x1" text="Department :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="department" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="phoneNumber" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label font="$x1" text="Phone Number :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button fx:id="confirm" layoutY="516.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="67.0" prefWidth="446.0" style="-fx-background-color:turquoise;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="376.0" AnchorPane.rightAnchor="378.0">
+      <font>
+        <Font name="System Bold" size="17.0" />
+      </font>
+    </Button>
+    <AnchorPane layoutY="0.0" prefHeight="75.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Label layoutY="15.0" prefWidth="216.0" text="SIGN UP" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="462.0">
+          <font>
+            <Font name="System Bold" size="34.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <Button fx:id="back" layoutX="1101.0" layoutY="602.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:dodgerblue;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE" />
+    <Label fx:id="error" layoutX="142.0" layoutY="447.0" prefWidth="471.0" text="" textFill="#ff3333">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" depthTest="DISABLE" opacity="1.0" prefHeight="650.0" prefWidth="1200.0" style="&#10;&#10;-fx-background-color:dodgerblue; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.FXMLDocumentController">
+  <children>
+    <Button id="button" fx:id="login" defaultButton="false" layoutY="295.0" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="227.0" style="-fx-background-color:white;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Login" textFill="BLACK" wrapText="true" AnchorPane.leftAnchor="451.0" AnchorPane.rightAnchor="522.0">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Button>
+    <Label fx:id="label" contentDisplay="CENTER" layoutY="22.0" minHeight="16.0" minWidth="69.0" prefHeight="194.0" prefWidth="444.0" style="" text="   WELCOME TO THE STUDENT MANAGMENT SYSTEM" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="421.0">
+      <font>
+        <Font name="Arial Black" size="28.0" />
+      </font>
+    </Label>
+    <Button fx:id="signup" layoutY="419.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="68.0" prefWidth="227.0" style="-fx-background-color:lightgreen;&#10;&#10;-fx-background-radius:35;" text="Sign Up" textFill="BLACK" wrapText="true" AnchorPane.leftAnchor="451.0" AnchorPane.rightAnchor="522.0">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

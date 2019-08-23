@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AdminPageController">
+  <children>
+    <GridPane layoutY="135.0" prefHeight="285.0" prefWidth="451.0" AnchorPane.leftAnchor="486.5" AnchorPane.rightAnchor="262.5">
+      <children>
+        <Label prefWidth="50.0" text="ID :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="System Bold" size="18.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label fx:id="id" font="$x1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label font="$x1" text="Name :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label id="department" fx:id="fullName" font="$x1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label font="$x1" text="Department :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label fx:id="department" font="$x1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label font="$x1" text="Phone Number :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label fx:id="phoneNumber" font="$x1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label fx:id="email" font="$x1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label font="$x1" text="E-Mail :" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="215.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="236.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <AnchorPane layoutY="0.0" prefHeight="92.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Label layoutY="28.0" prefWidth="388.0" text="Admin Information" textFill="BLACK" wrapText="true" AnchorPane.leftAnchor="455.0" AnchorPane.rightAnchor="357.0">
+          <font>
+            <Font name="System Bold" size="34.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <VBox layoutX="46.0" layoutY="134.0" prefHeight="257.0" prefWidth="259.0" spacing="40.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#changePass" prefHeight="35.0" prefWidth="199.0" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Change password" textFill="WHITE" wrapText="true">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button fx:id="edit" font="$x2" mnemonicParsing="false" onAction="#edit" prefHeight="36.0" prefWidth="199.0" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Edit Student Info" textFill="WHITE" wrapText="true" />
+        <Button fx:id="add" font="$x2" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="199.0" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Add Student" textFill="WHITE" wrapText="true" />
+        <Button fx:id="delete" font="$x2" mnemonicParsing="false" onAction="#delete" prefHeight="37.0" prefWidth="199.0" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Delete Student Info" textFill="WHITE" wrapText="true" />
+      </children>
+    </VBox>
+    <Button fx:id="back" layoutX="1058.0" layoutY="582.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:dodgerblue;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x3" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
